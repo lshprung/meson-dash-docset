@@ -1,8 +1,0 @@
-insert() {
-	DB_PATH="$1"
-	NAME="$2"
-	TYPE="$3"
-	PAGE_PATH="$4"
-
-	sqlite3 "$DB_PATH" "INSERT INTO searchIndex(name, type, path) VALUES (\"$NAME\",\"$TYPE\",\"$PAGE_PATH\");"
-}
